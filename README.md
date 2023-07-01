@@ -20,8 +20,8 @@
 
 <p>Os dados sobre <b>casos da COVID-19</b> são compilados pelo centro de ciência de sistemas e engenharia da universidade americana <b>John Hopkins</b> <a href="https://www.jhu.edu/">(link)</a>. Os dados são atualizados diariamente deste janeiro de 2020 com uma granularidade temporal de dias e geográfica de regiões de países (estados, condados, etc.). O website do projeto pode ser acessado neste <a href="https://systems.jhu.edu/research/public-health/ncov/">link</a> enquanto os dados, neste <a href="https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports">link</a>. Abaixo estão descritos os dados derivados do seu processamento.</p>
 
-- <b> date</b>: data de referência;
-- <b> state</b>: estado;
+- <b>date</b>: data de referência;
+- <b>state</b>: estado;
 - <b>country</b>: país;
 - <b>population</b>: população estimada;
 - <b>confirmed</b>: número acumulado de infectados;
@@ -63,7 +63,7 @@ Como os dados estão compilados em um arquivo por dia (exemplo: 2021/12/01), foi
 
 - Foi criada a função date_range como meta para a iteração a cada data entre 2 periodos, start_date e end_date, ambos informados manualmente;
 - Como o endereço do GitHub <a href="https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/01-12-2021.csv">(link)</a> pode ser alterado para acessar cada dia, foi utilizado o date_range para alterar a data de acesso a cada iteração;
-- A cada vez, foi selecionado as colunas de interesse descritas, a região do Brasil e criada uma coluna data já formatada para o Data Studio.
+- A cada vez, foi selecionado as colunas de interesse descritas, a região do Brasil e criada a coluna data já formatada para o Data Studio.
 
 
 <h5>2.1.2. Wrangling</h5>
@@ -144,7 +144,6 @@ O dashboard de dados contem os seguintes gráficos para a análise exploratória
   - numpy
   - pandas
   
-
 
 <h2>Contato</h2>
 <p>Caio Marques - <a href="https://www.linkedin.com/in/caiombr/">LinkedIn</a></p>
